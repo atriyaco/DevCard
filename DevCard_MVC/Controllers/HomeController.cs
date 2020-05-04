@@ -20,6 +20,11 @@ namespace DevCard_MVC.Controllers
             return View();
         }
 
+        public IActionResult Projects()
+        {
+            return PartialView("Projects"); 
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
